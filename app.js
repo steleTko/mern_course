@@ -8,6 +8,7 @@ app.use(express.json({ extended: true }))
 
 // Создаём роуты для приложения (ручки)
 app.use('/api/auth', require('./routes/auth.routes'))
+app.use('/api/link', require('./routes/link.routes'))
 
 const PORT = config.get('PORT') || 5000
 
